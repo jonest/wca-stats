@@ -38,8 +38,13 @@
         </section>
     </main>
     <footer>
-        <p>Last updated: 2026-04-01 02:31 UTC</p>
+        <p>Last updated: <time id="last-updated" datetime="2026-04-01 02:31 UTC">2026-04-01 02:31 UTC</time></p>
         <p>Source: <a href="https://www.worldcubeassociation.org/export/results">WCA Results Export</a></p>
     </footer>
+    <script>
+        const el = document.getElementById('last-updated');
+        const d = new Date(el.dateTime.replace(' ', 'T').replace(' UTC', 'Z'));
+        if (!isNaN(d)) el.textContent = d.toLocaleString();
+    </script>
 </body>
 </html>
