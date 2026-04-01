@@ -40,6 +40,30 @@ header a:hover {
     text-decoration: underline;
 }
 
+nav {
+    max-width: 1200px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    background: #fff;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background: #6cb4ee;
+    color: #fff;
+}
+
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -52,6 +76,7 @@ section {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
     overflow: hidden;
+    scroll-margin-top: 1rem;
 }
 
 section h2 {
@@ -89,6 +114,15 @@ td {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #eee;
     white-space: nowrap;
+}
+
+td a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
 }
 
 tbody tr:hover {
